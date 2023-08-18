@@ -1,0 +1,6 @@
+.nav{
+    @apply w-full fixed bottom-0 md:bottom-1 select-none flex justify-center items-center left-0 right-0 z-[2000]
+}
+.nav-container{
+    @apply w-full max-w-xl grid grid-cols-5 px-2 bg-gray-300 dark:bg-gray-500 rounded-xl md:py-2 pb-4 pt-2 md:pb-2
+}

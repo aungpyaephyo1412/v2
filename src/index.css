@@ -1,0 +1,19 @@
+@import url(https://fonts.bunny.net/css?family=acme:400|akaya-kanadaka:400|poppins:400,500,600,700,800,900);
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.none-active-btn{
+    @apply rounded-3xl text-xs px-1 py-2 flex justify-center items-center align-bottom gap-x-1 text-gray-900 dark:text-gray-50 translate-y-0 transition duration-500
+}
+.active{
+    @apply relative text-xs px-1 flex justify-center items-center align-bottom gap-x-1 text-gray-50 bg-gray-500 py-2 dark:bg-gray-300 dark:text-gray-900 rounded-3xl md:px-5 md:py-1.5
+        translate-y-[-25px]
+    after:inline-block after:w-[5px] after:h-[5px] after:absolute after:bottom-0 after:translate-y-[15px] dark:after:bg-gray-900 after:bg-gray-500 after:rounded-full
+}
+.active .active-text{
+    display: inline-block;
+}
